@@ -9,7 +9,7 @@ class Program
     {
         //Snack 1:
 
-        /*Console.WriteLine("Inserisci il primo numero:");
+        Console.WriteLine("Inserisci il primo numero:");
         int numero1 = int.Parse(Console.ReadLine());
 
         Console.WriteLine("Inserisci il secondo numero:");
@@ -100,7 +100,7 @@ class Program
         else
         {
             Console.WriteLine("Vattene.");
-        }*/
+        }
 
         //Snack 7:
 
@@ -115,5 +115,24 @@ class Program
                 numeriDispari[i] = numero;
             }
         }
+        foreach (int num in numeriDispari)
+        {
+            if (num != 0)
+                Console.WriteLine(num);
+        }
+        
+        //Snack 8:
+
+        int[] numeri = { 1, 2, 3, 4, 13, 17 , 16 };
+        int sum = 0;
+
+        for (int i = 0; i <= numeri.Length - 1; i++)
+        {
+            if (i % 2 != 0 && i != 0)
+            {
+                sum += numeri[i];
+            }
+        }
+        Console.WriteLine(sum);
     }
 }
