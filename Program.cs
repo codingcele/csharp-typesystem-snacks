@@ -35,13 +35,13 @@ class Program
 
         if (parola1.Length > parola2.Length)
         {
-            Console.WriteLine(parola1);
             Console.WriteLine(parola2);
+            Console.WriteLine(parola1);
         }
         else if (parola1.Length < parola2.Length)
         {
-            Console.WriteLine(parola2);
             Console.WriteLine(parola1);
+            Console.WriteLine(parola2);
         }
         else
         {
@@ -152,6 +152,24 @@ class Program
         foreach (int num in numeri)
         {
             Console.WriteLine(num);
+        }
+
+        //Snack 10:
+
+        Console.Write("Inserisci un numero intero positivo: ");
+        int n = int.Parse(Console.ReadLine());
+
+        Random rnd = new Random();
+
+        for (int i = 1; i <= n; i++)
+        {
+            int[] array = new int[10];
+            for (int j = 0; j < array.Length; j++)
+            {
+                array[j] = rnd.Next(1, 101);
+            }
+
+            Console.WriteLine("Array " + i + ": " + string.Join(", ", array));
         }
     }
 }
