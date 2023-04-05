@@ -1,14 +1,14 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-
-//Snack 1:
-
 using System;
+using System.Linq;
 
 class Program
 {
     static void Main(string[] args)
     {
+        //Snack 1:
+
         Console.WriteLine("Inserisci il primo numero:");
         int numero1 = int.Parse(Console.ReadLine());
 
@@ -24,15 +24,9 @@ class Program
             else
                 Console.WriteLine("Il numero più grande è: " + numero2);
         }
-    }
-}
 
-//Snack 2:
+        //Snack 2:
 
-class Program
-{
-    static void Main(string[] args)
-    {
         Console.WriteLine("Inserisci la prima parola:");
         string parola1 = Console.ReadLine();
 
@@ -54,16 +48,8 @@ class Program
             Console.WriteLine($"{parola1} e {parola2} hanno la stessa lunghezza.");
         }
 
+        //Snack 3:
 
-    }
-}
-
-//Snack 3:
-
-class Program
-{
-    static void Main(string[] args)
-    {
         int sum = 0;
         for (int i = 0; i < 10; i++)
         {
@@ -72,15 +58,9 @@ class Program
             sum += numero;
         }
         Console.WriteLine($"La somma dei 10 numeri che hai inserito è: " + sum);
-    }
-}
 
-//Snack 4:
+        //Snack 4:
 
-class Program
-{
-    static void Main(string[] args)
-    {
         int min = 2;
         int max = 10;
         int sum = 0;
@@ -91,15 +71,9 @@ class Program
         int average = sum / (max - min + 1);
         Console.WriteLine($"La somma dei numeri è: " + sum);
         Console.WriteLine($"La media dei numeri è: " + average);
-    }
-}
 
-//Snack 5:
+        //Snack 5:
 
-class Program
-{
-    static void Main(string[] args)
-    {
         Console.WriteLine("Inserisci un numero:");
         int numero = int.Parse(Console.ReadLine());
 
@@ -107,5 +81,20 @@ class Program
             Console.WriteLine(numero);
         else
             Console.WriteLine(numero + 1);
+
+        //Snack 6:
+
+        string[] listaGatsby = { "Ciccio", "Marco", "Andrea", "Lucia", "Martina", "Giuseppina" };
+        Console.WriteLine("Inserisci il tuo nome: ");
+        string nome = Console.ReadLine();
+
+        if (listaGatsby.Contains(nome))
+        {
+            Console.WriteLine("Benvenuto alla festa!");
+        }
+        else
+        {
+            Console.WriteLine("Vattene.");
+        }
     }
 }
