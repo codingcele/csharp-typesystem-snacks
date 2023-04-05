@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-//Ex 1
+
+//Ex 1:
 
 using System;
 
@@ -23,7 +24,36 @@ class Program
             else
                 Console.WriteLine("Il numero più grande è: " + numero2);
         }
-            
+    }
+}
+
+//Ex 2:
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Inserisci la prima parola:");
+        string parola1 = Console.ReadLine();
+
+        Console.WriteLine("Inserisci la seconda parola:");
+        string parola2 = Console.ReadLine();
+
+        if (parola1.Length > parola2.Length)
+        {
+            Console.WriteLine(parola1);
+            Console.WriteLine(parola2);
+        }
+        else if (parola1.Length < parola2.Length)
+        {
+            Console.WriteLine(parola2);
+            Console.WriteLine(parola1);
+        }
+        else
+        {
+            Console.WriteLine($"{parola1} e {parola2} hanno la stessa lunghezza.");
+        }
+
 
     }
 }
