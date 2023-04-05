@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 
-//Ex 1:
+//Snack 1:
 
 using System;
 
@@ -27,7 +27,7 @@ class Program
     }
 }
 
-//Ex 2:
+//Snack 2:
 
 class Program
 {
@@ -55,5 +55,22 @@ class Program
         }
 
 
+    }
+}
+
+//Snack 3:
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int sum = 0;
+        for (int i = 0; i < 10; i++)
+        {
+            Console.WriteLine($"Inserisci il {i + 1}° numero: ");
+            int numero = int.Parse(Console.ReadLine());
+            sum += numero;
+        }
+        Console.WriteLine($"La somma dei 10 numeri che hai inserito è: " + sum);
     }
 }
