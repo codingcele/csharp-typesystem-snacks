@@ -74,3 +74,22 @@ class Program
         Console.WriteLine($"La somma dei 10 numeri che hai inserito è: " + sum);
     }
 }
+
+//Snack 4:
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int min = 2;
+        int max = 10;
+        int sum = 0;
+        for (int i = min; i <= max; i++)
+        {
+            sum += i;
+        }
+        int average = sum / (max - min + 1);
+        Console.WriteLine($"La somma dei numeri è: " + sum);
+        Console.WriteLine($"La media dei numeri è: " + average);
+    }
+}
