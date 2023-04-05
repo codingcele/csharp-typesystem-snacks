@@ -9,7 +9,7 @@ class Program
     {
         //Snack 1:
 
-        Console.WriteLine("Inserisci il primo numero:");
+        /*Console.WriteLine("Inserisci il primo numero:");
         int numero1 = int.Parse(Console.ReadLine());
 
         Console.WriteLine("Inserisci il secondo numero:");
@@ -77,10 +77,15 @@ class Program
         Console.WriteLine("Inserisci un numero:");
         int numero = int.Parse(Console.ReadLine());
 
-        if (numero % 2 == 0)
-            Console.WriteLine(numero);
+        if (numero != 0)
+        {
+            if (numero % 2 == 0)
+                Console.WriteLine(numero);
+            else
+                Console.WriteLine(numero + 1);
+        } 
         else
-            Console.WriteLine(numero + 1);
+            Console.WriteLine("Il numero è 0.");
 
         //Snack 6:
 
@@ -95,6 +100,20 @@ class Program
         else
         {
             Console.WriteLine("Vattene.");
+        }*/
+
+        //Snack 7:
+
+        int[] numeriDispari = new int[6];
+
+        for (int i = 0; i <= 5; i++)
+        {
+            Console.WriteLine($"Inserisci il {i + 1}° numero: ");
+            int numero = int.Parse(Console.ReadLine());
+            if (numero % 2 != 0)
+            {
+                numeriDispari[i] = numero;
+            }
         }
     }
 }
