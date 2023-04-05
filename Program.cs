@@ -8,7 +8,7 @@ class Program
     static void Main(string[] args)
     {
         //Snack 1:
-
+        
         Console.WriteLine("Inserisci il primo numero:");
         int numero1 = int.Parse(Console.ReadLine());
 
@@ -156,10 +156,11 @@ class Program
 
         //Snack 10:
 
-        Console.Write("Inserisci un numero intero positivo: ");
-        int n = int.Parse(Console.ReadLine());
+        Console.WriteLine("Inserisci la prima parola:");
+        string parola1 = Console.ReadLine();
 
-        Random rnd = new Random();
+        Console.WriteLine("Inserisci la seconda parola:");
+        string parola2 = Console.ReadLine();
 
         for (int i = 1; i <= n; i++)
         {
@@ -170,6 +171,31 @@ class Program
             }
 
             Console.WriteLine("Array " + i + ": " + string.Join(", ", array));
+        }
+        
+        //Snack 11:
+
+        Console.WriteLine("Inserisci la prima parola:");
+        string parola1 = Console.ReadLine();
+
+        Console.WriteLine("Inserisci la seconda parola:");
+        string parola2 = Console.ReadLine();
+
+        ConfrontaStringhe(parola1, parola2);
+    }
+
+    public static void ConfrontaStringhe(string primaStringa, string secondaStringa)
+    {
+        if (primaStringa == secondaStringa)
+        {
+            Console.WriteLine($"{primaStringa} e {secondaStringa}");
+        }
+        else
+        {
+            if (primaStringa.Length > secondaStringa.Length)
+                Console.WriteLine(primaStringa);
+            else
+                Console.WriteLine(secondaStringa);
         }
     }
 }
