@@ -181,7 +181,14 @@ class Program
         Console.WriteLine("Inserisci la seconda parola:");
         string parola2 = Console.ReadLine();
 
-        ConfrontaStringhe(parola1, parola2);
+        ConfrontaStringhe(parola1, parola2); */
+
+        //Snack 12:
+
+        Console.WriteLine("Inserisci un numero intero: ");
+        int numero = int.Parse(Console.ReadLine());
+
+        VerificaPari(numero);
     }
 
     public static void ConfrontaStringhe(string primaStringa, string secondaStringa)
@@ -196,6 +203,23 @@ class Program
                 Console.WriteLine(primaStringa);
             else
                 Console.WriteLine(secondaStringa);
+        }
+    }
+
+    public static void VerificaPari(int num)
+    {
+        if (num != 0)
+        {
+            if (num % 2 == 0)
+            {
+                Console.WriteLine("Il numero è pari.");
+            }
+            else
+                Console.WriteLine("Il numero è dispari.");
+        }
+        else
+        {
+            Console.WriteLine("Il numero è 0.");
         }
     }
 }
