@@ -134,5 +134,24 @@ class Program
             }
         }
         Console.WriteLine(sum);
+        
+        //Snack 9:
+
+        int sum = 0;
+        int[] numeri = {};
+
+        while (sum < 50)
+        {
+            Console.WriteLine("Inserisci un numero: ");
+            int numero = int.Parse(Console.ReadLine());
+            Array.Resize(ref numeri, numeri.Length + 1);
+            numeri[numeri.Length - 1] = numero;
+            sum += numero;
+        }
+        Console.WriteLine(sum);
+        foreach (int num in numeri)
+        {
+            Console.WriteLine(num);
+        }
     }
 }
